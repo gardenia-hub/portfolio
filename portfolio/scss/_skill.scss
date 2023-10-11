@@ -1,0 +1,26 @@
+/* skill */
+.skill{
+  .skill_wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+
+    li {
+      margin-bottom: 20px;
+      img {
+        width: 200px;
+        height: 200px;
+        background-color: #F7E3DA;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px 5px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  } 
+}

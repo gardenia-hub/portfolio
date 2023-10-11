@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natsuki Takano Portfolio</title>
+  <link rel="icon" href="img/favicon.png">
+  <!-- css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-11/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-11/css/8-11.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Q1Y579PT3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5Q1Y579PT3');
+</script>
+
+<body>
+  <!-- <div class="loader_wrapper">
+    <div class="loader"></div>
+  </div> -->
+  
+  <header>
+    <div class="header_inner">
+      <h1>NATSUKI TAKANO</h1>
+      <nav>
+        <ul>
+          <li id="no1"><a href="#about">About</a></li>
+          <li id="no2"><a href="#skill" >Skill</a></li>
+          <li id="no3"><a href="#work">Work</a></li>
+          <li id="no4"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガーボタン -->
+      <div id="bars" class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal" id="modal">
+    <i class="bi bi-x" id="xbtn"></i>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="main_visual">
+    <p class="name1">
+      <span>N</span>
+      <span>A</span>
+      <span>T</span>
+      <span>S</span>
+      <span>U</span>
+      <span>K</span>
+      <span>I</span>
+    </p>
+    <p class="name2">
+      <span>T</span>
+      <span>A</span>
+      <span>K</span>
+      <span>A</span>
+      <span>N</span>
+      <span>O</span>
+    </p>
+  </div>
+  
+  <main>
+    <div id="about">
+      <section class="about" >
+        <h2>About</h2>
+        <div class="about_wrapper">
+          <div class="about_message">
+            <p>みんなも自分も笑顔になるWEBサイトを。</p>
+            <p>ポートフォリオへ、ようこそお越しくださいました。<br>現役大学生WEBプログラマーの高野夏月です。</p>
+            <p>このページを訪れてくださったあなたも、WEBサイトを通じて出会うあなたのお客様も、そしてWEBサイトを作成する自分も、誰もが笑顔になれるようなサイト作りをモットーにしています。</p>
+            <p>WEBサイトから、小さな笑顔を生み出すお手伝いをさせていただけませんか？<br>よろしくお願いいたします。</p>
+          </div>
+          <div class="about_img">
+            <img src="img/natsuki.webp" alt="">
+          </div>
+        </div>
+        <table>
+          <tr>
+            <th>名前</th>
+            <td>高野夏月(たかのなつき)</td>
+          </tr>
+          <!-- <tr>
+            <th>電話番号</th>
+            <td>090-1224-0788</td>
+          </tr> -->
+          <tr>
+            <th>メールアドレス</th>
+            <td>gardenia.jasminoides.work@gmail.com</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <div id="skill">
+      <section class="skill">
+        <h2>Skill</h2>
+        <ul class="skill_wrapper">
+          <li>
+            <img src="img/skill/HTML.webp" alt="html/css">
+            <p>HTML</p>
+          </li>
+          <li>
+            <img src="img/skill/CSS.webp" alt="html/css">
+            <p>CSS</p>
+          </li>
+          <li>
+            <img src="img/skill/JS.webp" alt="html/css">
+            <p>JavaScript/jQuery</p>
+          </li>
+          <li>
+            <img src="img/skill/programming.webp" alt="html/css">
+            <p>PHP</p>
+          </li>
+          <li>
+            <img src="img/skill/wordpress.webp" alt="html/css">
+            <p>Wordpress</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    
+    <div id="work">
+      <section class="work">
+        <h2>Work</h2>
+        <ul class="work_wrapper">
+          <li>
+            <a href="">
+              <img src="img/work-potfolio.webp" alt="高野夏月のポートフォリオ" style="border: 1px solid #555;">
+              <div>
+                <p>【担当】<br>デザイン<br>コーディング</p>
+              </div>
+            </a>
+            <p>ポートフォリオ</p>
+          </li>
+          <!-- <li>
+            <a href="">
+              <img src="img/work.png" alt="パラリンピックリーダープロジェクトのwebサイト">
+              <div>
+                <p>Wordpressサイト</p>
+                <p>【担当】<br>デザイン<br>コーディング</p>
+              </div>
+            </a>
+            <p>早稲田大学<br>パラリンピック・リーダープロジェクト</p>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/work.png" alt="パラリンピックリーダープロジェクトのwebサイト">
+              <div>
+                <p>Wordpressサイト</p>
+                <p>【担当】<br>デザイン<br>コーディング</p>
+              </div>
+            </a>
+            <p>早稲田大学<br>パラリンピック・リーダープロジェクト</p>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/work.png" alt="パラリンピックリーダープロジェクトのwebサイト">
+              <div>
+                <p>Wordpressサイト</p>
+                <p>【担当】<br>デザイン<br>コーディング</p>
+              </div>
+            </a>
+            <p>早稲田大学<br>パラリンピック・リーダープロジェクト</p>
+          </li> -->
+        </ul>
+      </section>
+    </div>
+
+    <div id="contact">
+      <section class="contact">
+        <h2>Contact</h2>
+        <form action="mail.php" method="post">
+          <div>
+            <p>お名前</p>
+            <input type="text" name="name" class="input1">
+          </div>
+          <div>
+            <p>メールアドレス</p>
+            <input type="email" name="mail" class="input1">
+          </div>
+          <div>
+            <p>お問い合わせ内容</p>
+            <textarea name="content" id="" cols="30" rows="10"></textarea>
+          </div>
+          <input type="submit" value="送信" class="btn">
+        </form>
+      </section>
+    </div>
+
+    <!-- to top -->
+    <div class="totop" id="toTop">
+      <a href="" class="btn">To TOP</a>
+    </div>
+  </main>
+
+  <footer>
+    <p><small>Ⓒ2023 NatsukiTakano All Rights Reserved.</small></p>
+  </footer>
+  
+</body>
+</html>

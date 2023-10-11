@@ -1,0 +1,92 @@
+/* ヘッダー */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #D96767;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  z-index: 2;
+  /* box-shadow: 0 1px 1px #555; */
+
+  .header_inner {
+    max-width: 1120px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 48px;
+    }
+
+    nav ul {
+      display: flex;
+      
+      li {
+        padding-left: 30px;
+        font-size: 24px;
+        &:hover {
+          opacity: 0.7;
+        }
+        &.cuurent {
+          text-decoration: underline #fff;
+        }
+      }
+    }
+
+    /* ハンバーガーメニュー */
+    .bars {
+      display: none;
+      &:hover {
+        opacity: 0.7;
+      }
+      span {
+        display: block;
+        margin: 6px 0;
+        width: 50px;
+        height: 6px;
+        border-radius: 3px;
+        background: #fff;
+      }
+    }
+  }
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  background-color: #F9C770;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+
+  i {
+    color: #fff;
+    font-size: 48px;
+    margin-left: calc(100% - 56px);
+  }
+
+  nav {
+    height: calc(90% - 36px);
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        a{
+        font-size: 36px;
+        }
+      }
+    }
+  }
+
+}

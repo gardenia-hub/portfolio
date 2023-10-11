@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* common */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #E2A39C;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+main {
+  max-width: 1120px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 200px;
+  /* ふわっと表示 */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: opacity 1s, visibility 1s, transform 0.6s;
+}
+
+section.is-fadein {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.skill,
+.work,
+.contact {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+h1,
+h2,
+li,
+p,
+small,
+a {
+  color: #fff;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.btn {
+  display: block;
+  background-color: #F7E3DA;
+  border-radius: 20px;
+  color: #555;
+  border-bottom: 5px solid #555;
+}
+
+.btn:hover {
+  border-bottom: 2px solid #555;
+  cursor: pointer;
+  transform: translateY(3px);
+}
+
+/* ローダー https://jito-site.com/jquery-loading-screen-animation/ https://projects.lukehaas.me/css-loaders/ */
+/* .loader_wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #F7E3DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+} */
+
+/* ヘッダー */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #D96767;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  z-index: 2;
+  /* box-shadow: 0 1px 1px #555; */
+}
+
+.header_inner {
+  max-width: 1120px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  padding-left: 30px;
+  font-size: 24px;
+}
+
+header nav ul li:hover {
+  opacity: 0.7;
+}
+
+header nav ul li.cuurent {
+  text-decoration: underline #fff;
+}
+
+/* ハンバーガーメニュー */
+.header_inner .bars {
+  display: none;
+}
+
+.header_inner .bars:hover {
+  opacity: 0.7;
+}
+
+.header_inner .bars span {
+  display: block;
+  margin: 6px 0;
+  width: 50px;
+  height: 6px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  background-color: #F9C770;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+}
+
+.modal i {
+  color: #fff;
+  font-size: 48px;
+  margin-left: calc(100% - 56px);
+}
+
+.modal nav {
+  height: calc(90% - 36px);
+}
+
+.modal nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal nav ul li a {
+  font-size: 36px;
+}
+
+/* メインビジュアル */
+
+
+/* about */
+
+
+/* skill */
+.skill_wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.skill_wrapper li {
+  margin-bottom: 20px;
+}
+
+.skill_wrapper li img {
+  width: 200px;
+  height: 200px;
+  background-color: #F7E3DA;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 5px;
+}
+
+.skill_wrapper li p {
+  text-align: center;
+}
+
+/* work */
+
+
+/* contact */
+
+
+
+
+/* メディアクエリ */
+
+
+
+

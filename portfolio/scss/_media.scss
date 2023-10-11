@@ -1,0 +1,37 @@
+@media (max-width:905px) {
+  header {
+    .header_inner{
+      h1{
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  header {
+    .header_inner{
+      nav {
+      display: none;
+    }
+      .bars{
+      display: block;
+    }
+  }
+}
+
+  .modal {
+    &.show{
+    display: block;
+    }
+  }
+
+  .main_visual p span {
+    font-size: 60px;
+  }
+
+  .about .about_wrapper div {
+    margin: 20px auto 0;
+  }
+
+}

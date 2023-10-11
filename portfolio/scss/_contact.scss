@@ -1,0 +1,27 @@
+.contact {
+  margin-bottom: 100px;
+
+  form {
+    div {
+    display: flex;
+    margin-bottom: 20px;
+
+      p {
+        width: 30%;
+        text-align: center;
+      }
+      input,
+      textarea {
+        width: 70%;
+        border: 1px solid #555;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+    }
+    .btn {
+      width: 300px;
+      height: 40px;
+      margin: 50px auto 0;
+    }
+  }
+}

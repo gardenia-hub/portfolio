@@ -1,0 +1,86 @@
+@keyframes updown-anim{
+  0%{
+    transform: translateY(130%); 
+  }
+  20%{
+    transform: translateY(0); 
+  }
+  100%{
+    transform: translateY(0); 
+  }
+}
+
+.main_visual {
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  background-color: #F7E3DA;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  p{
+    color: #555;
+    font-size: 120px;
+    font-family: 'Arvo', serif;
+
+    &.name1,
+    &.name2{
+      display: flex;
+      overflow: hidden;
+
+      span {
+        transform: translateY(130%);
+        display: block; 
+        animation: 3.5s updown-anim linear forwards;
+      }
+    }
+  }
+
+  p+p {
+    padding-left: 60px;
+  }
+}
+
+/* 文字の遅延 */
+.main_visual p.name1 span:nth-child(1) {
+  animation-delay: 0s;
+}
+.main_visual p.name1 span:nth-child(2) {
+  animation-delay: 0.05s;
+}
+.main_visual p.name1 span:nth-child(3) {
+  animation-delay: 0.10s;
+}
+.main_visual p.name1 span:nth-child(4) {
+  animation-delay: 0.15s;
+}
+.main_visual p.name1 span:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.main_visual p.name1 span:nth-child(6) {
+  animation-delay: 0.25s;
+}
+.main_visual p.name1 span:nth-child(7) {
+  animation-delay: 0.3s;
+}
+
+.main_visual p.name2 span:nth-child(1) {
+  animation-delay: 0.35s;
+}
+.main_visual p.name2 span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.main_visual p.name2 span:nth-child(3) {
+  animation-delay: 0.45s;
+}
+.main_visual p.name2 span:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.main_visual p.name2 span:nth-child(5) {
+  animation-delay: 0.55s;
+}
+.main_visual p.name2 span:nth-child(6) {
+  animation-delay: 0.6s;
+}

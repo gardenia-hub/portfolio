@@ -1,0 +1,50 @@
+.work{
+  .work_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+      text-align: center;
+      margin-bottom: 40px;
+      a {
+        position: relative;
+        display: block;
+        width: 300px;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit:cover;
+          border-radius: 20px;
+        }
+        div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: .1s;
+          border-radius: 20px;
+
+          &:hover {
+            background-color: #F9C770;
+            opacity: 0.95;
+          }
+
+          p {
+            opacity: 1;
+            color: #fff;
+          }
+        }
+        p {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
